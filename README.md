@@ -1,5 +1,8 @@
 # progressive_enhanced_autoscrollers
-A handful of javascript functions and css styles to build progressively enhanced horizontal autoscrollers. 
+A handful of javascript functions and css styles to build progressively enhanced horizontal autoscrollers. Handle's cases when users prefer reduced motion (sets the scroller to flex-wrap: wrap );
+
+Use the create*() functions for quick setup or customize your scroller using HorizontalInfiniteScroller with li or img children. 
+
 
 ## Types
 ### ScrollerOptions 
