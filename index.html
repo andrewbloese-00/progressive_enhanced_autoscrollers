@@ -14,28 +14,36 @@
     <script src="./hscroller.js"></script>
     <!-- Attach whatever scrollers you want in your own script -->
     <script>
-     const skills = ["CSS", "HTML", "NodeJS","React","MongoDB","Java","Python","Flaks"]
-     const skillsScroller = createScrollerOfText(skills)
-     const skillsScrollerRev = createScrollerOfText(skills,{
+     //define skills array
+     const skills = ["CSS", "HTML", "NodeJS","React","MongoDB","Java","Python","Flask"]
+
+     //define images array
+     const images = [
+        { alt: "CSS Logo", url: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"},
+        { alt: "HTML5 Logo", url: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"},
+        { alt: "Javascript Logo", url:"https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"},
+        { alt: "Typescript Logo", url: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"},
+        { alt: "Python Logo", url: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"},
+        { alt: "Node.JS Logo", url: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"},
+        { alt: "React.JS Logo", url: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"},
+    ]
+    
+    //build text scrollers
+    const skillsScroller = createScrollerOfText(skills)
+    const skillsScrollerRev = createScrollerOfText(skills,{
         speed: "fast",
         direction: "left"
-     })
-    //  document.body.appendChild(skillsScroller)
-     const images = {
-        "css":"https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
-        "html":"https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
-        "javascript":"https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png",
-        "typescript":"https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
-        "python":"https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
-        "nodejs": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
-        "reactjs":"https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-    }
-    
-     const imgScroller = createScrollerOfImages(images,{
-        speed: "fast",
+    })
+    //build img scroller
+    const imgScroller = createScrollerOfImages(images,{
+        speed: "slow",
         direction: "right"
-     })
-     document.body.appendChild(imgScroller);
+    })
+
+    /*  uncomment to preview each type */
+    //  document.body.appendChild(skillsScroller);
+    //  document.body.appendChild(skillsScrollerRev);
+    //  document.body.appendChild(imgScroller);
     </script>
     
 </body>
